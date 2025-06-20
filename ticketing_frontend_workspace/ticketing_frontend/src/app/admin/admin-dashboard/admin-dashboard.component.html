@@ -1,5 +1,36 @@
 <h2>Admin Dashboard</h2>
-<!-- Admin dashboard placeholder -->
-<div class="admin-dashboard-placeholder">
-  Admin dashboard content will be displayed here.
+<div class="admin-dashboard-controls">
+  <!-- Future admin controls can go here -->
 </div>
+
+<div *ngIf="loading" class="admin-dashboard-placeholder">Loading tickets...</div>
+<div *ngIf="error" class="admin-dashboard-placeholder" style="color: red;">
+  {{ error }}
+</div>
+<div *ngIf="!loading && !error && tickets.length === 0" class="admin-dashboard-placeholder">No tickets found.</div>
+
+<ul *ngIf="!loading && !error && tickets.length">
+  <li *ngFor="let ticket of tickets" class="admin-ticket-list-item">
+    <div class="ticket-header">
+      <span class="ticket-title">{{ ticket.title }}</span>
+      <span class="ticket-status-pill" [ngClass]="ticket.status">{{ ticket.status | titlecase }}</span>
+    </div>
+    <div class="ticket-meta">
+      <span>ID: {{ ticket.id }}</span>
+      <span>Created: {{ ticket.created_at | date:'short' }}</span>
+      <span>Updated: {{ ticket.updated_at | date:'short' }}</span>
+      <span>Owner: {{ ticket.owner_id }}</span>
+    </div>
+    <p *ngIf="ticket.description" class="ticket-desc">{{ ticket.description }}</p>
+    <div class="ticket-actions">
+      <!-- Placeholder for admin-level controls, e.g., status change, edit/delete -->
+      <span>Status:</span>
+      <select [value]="ticket.status" (change)="onStatusSelect($event, ticket)">
+        <option value="open">Open</option>
+        <option value="in_progress">In Progress</option>
+        <option value="closed">Closed</option>
+      </select>
+      <button (click)="deleteTicket(ticket)">Delete</button>
+    </div>
+  </li>
+</ul>

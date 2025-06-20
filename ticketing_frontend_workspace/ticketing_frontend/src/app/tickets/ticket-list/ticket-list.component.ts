@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Ticket, TicketCreate, TicketUpdate } from '../tickets.service';
 import { CommonModule } from '@angular/common';
-import { TicketsService, Ticket, TicketCreate, TicketUpdate } from '../tickets.service';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './ticket-list.component.html',
   styleUrls: ['./ticket-list.component.css']
 })
-export class TicketListComponent implements OnInit {
+export class TicketListComponent {
   tickets: Ticket[] = [];
   loading = false;
   error: string | null = null;
@@ -21,12 +21,7 @@ export class TicketListComponent implements OnInit {
   modalError: string | null = null;
   formData: Partial<TicketCreate & TicketUpdate> = {};
   editingTicketId: number | null = null;
-
-  constructor(private ticketsService: TicketsService) {}
-
-  ngOnInit(): void {
-    this.loadTickets();
-  }
+}
 
   loadTickets(): void {
     this.loading = true;
@@ -105,8 +100,11 @@ export class TicketListComponent implements OnInit {
   }
 
   deleteTicket(ticket: Ticket): void {
-    // SSR-safe check for window
-    if (typeof window !== 'undefined' && !window.confirm(`Are you sure you want to delete the ticket "${ticket.title}"?`)) return;
+    // SSR-safe check for browser confirm dialog
+    if (typeof window !== 'undefined') {
+      // eslint-disable-next-line no-undef
+      if (!(window as any).confirm(`Are you sure you want to delete the ticket "${ticket.title}"?`)) return;
+    }
     this.ticketsService.deleteTicket(ticket.id).subscribe({
       next: () => this.loadTickets(),
       error: (err: any) => (this.error = err.message || 'Error deleting ticket')

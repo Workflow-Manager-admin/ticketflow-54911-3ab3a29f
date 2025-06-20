@@ -31,7 +31,7 @@ export interface TicketUpdate {
 export class TicketsService {
   private apiBase = '/api'; // Change if you have backend proxy, otherwise set full hostname
 
-  constructor(private http: HttpClient) {}
+  constructor() {}
 
   // PUBLIC_INTERFACE
   /** List all tickets */
