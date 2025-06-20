@@ -28,3 +28,332 @@ Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.510 seconds]
+
+✘ [ERROR] TS-996008: Component AdminDashboardComponent is standalone, and cannot be declared in an NgModule. Did you mean to import it instead? [plugin angular-compiler]
+
+    src/app/admin/admin.module.ts:9:4:
+      9 │     AdminDashboardComponent
+        ╵     ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996004: Can't be exported from this NgModule, as it must be imported first [plugin angular-compiler]
+
+    src/app/admin/admin.module.ts:16:4:
+      16 │     AdminDashboardComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996008: Component TicketListComponent is standalone, and cannot be declared in an NgModule. Did you mean to import it instead? [plugin angular-compiler]
+
+    src/app/tickets/tickets.module.ts:10:4:
+      10 │     TicketListComponent,
+         ╵     ~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996008: Component TicketDetailComponent is standalone, and cannot be declared in an NgModule. Did you mean to import it instead? [plugin angular-compiler]
+
+    src/app/tickets/tickets.module.ts:11:4:
+      11 │     TicketDetailComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996004: Can't be exported from this NgModule, as it must be imported first [plugin angular-compiler]
+
+    src/app/tickets/tickets.module.ts:18:4:
+      18 │     TicketListComponent,
+         ╵     ~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996004: Can't be exported from this NgModule, as it must be imported first [plugin angular-compiler]
+
+    src/app/tickets/tickets.module.ts:19:4:
+      19 │     TicketDetailComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.187 seconds]
+
+✘ [ERROR] TS-996008: Component AdminDashboardComponent is standalone, and cannot be declared in an NgModule. Did you mean to import it instead? [plugin angular-compiler]
+
+    src/app/admin/admin.module.ts:9:4:
+      9 │     AdminDashboardComponent
+        ╵     ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996004: Can't be exported from this NgModule, as it must be imported first [plugin angular-compiler]
+
+    src/app/admin/admin.module.ts:16:4:
+      16 │     AdminDashboardComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996008: Component TicketListComponent is standalone, and cannot be declared in an NgModule. Did you mean to import it instead? [plugin angular-compiler]
+
+    src/app/tickets/tickets.module.ts:10:4:
+      10 │     TicketListComponent,
+         ╵     ~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996008: Component TicketDetailComponent is standalone, and cannot be declared in an NgModule. Did you mean to import it instead? [plugin angular-compiler]
+
+    src/app/tickets/tickets.module.ts:11:4:
+      11 │     TicketDetailComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996004: Can't be exported from this NgModule, as it must be imported first [plugin angular-compiler]
+
+    src/app/tickets/tickets.module.ts:18:4:
+      18 │     TicketListComponent,
+         ╵     ~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996004: Can't be exported from this NgModule, as it must be imported first [plugin angular-compiler]
+
+    src/app/tickets/tickets.module.ts:19:4:
+      19 │     TicketDetailComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.215 seconds]
+
+✘ [ERROR] TS-996008: Component AdminDashboardComponent is standalone, and cannot be declared in an NgModule. Did you mean to import it instead? [plugin angular-compiler]
+
+    src/app/admin/admin.module.ts:9:4:
+      9 │     AdminDashboardComponent
+        ╵     ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996004: Can't be exported from this NgModule, as it must be imported first [plugin angular-compiler]
+
+    src/app/admin/admin.module.ts:16:4:
+      16 │     AdminDashboardComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  28.95 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 119.25 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-HORBQW7O.mjs   | -                |  29.39 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.180 seconds]
+
+12:42:10 PM [vite] Internal server error: ɵgetOrCreateAngularServerApp is not a function
+      at /home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/node_modules/@angular/build/src/tools/vite/middlewares/ssr-middleware.js:30:38
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+12:42:10 PM [vite] Internal server error: ɵgetOrCreateAngularServerApp is not a function
+      at /home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/node_modules/@angular/build/src/tools/vite/middlewares/ssr-middleware.js:30:38
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Page reload sent to client(s).
+ERROR RuntimeError: NG04007: The Router was provided more than once. This can happen if 'forRoot' is used outside of the root injector. Lazy loaded modules should use RouterModule.forChild() instead.
+    at Object.provideForRootGuard (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5815:11)
+    at Object.factory (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13664:32)
+    at eval (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13585:35)
+    at runInInjectorProfilerContext (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12742:5)
+    at R3Injector.hydrate (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13584:11)
+    at R3Injector.get (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13479:23)
+    at injectInjectorOnly (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12870:41)
+    at ɵɵinject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12876:59)
+    at inject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12885:10)
+    at _RouterModule (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5697:13) {
+  code: 4007
+}
+❯ Changes detected. Rebuilding...
+12:42:10 PM [vite] Internal server error: NG04007: The Router was provided more than once. This can happen if 'forRoot' is used outside of the root injector. Lazy loaded modules should use RouterModule.forChild() instead.
+      at Object.provideForRootGuard (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5815:11)
+      at Object.factory (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13664:32)
+      at eval (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13585:35)
+      at runInInjectorProfilerContext (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12742:5)
+      at R3Injector.hydrate (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13584:11)
+      at R3Injector.get (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13479:23)
+      at injectInjectorOnly (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12870:41)
+      at ɵɵinject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12876:59)
+      at inject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12885:10)
+      at _RouterModule (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5697:13)
+ERROR RuntimeError: NG04007: The Router was provided more than once. This can happen if 'forRoot' is used outside of the root injector. Lazy loaded modules should use RouterModule.forChild() instead.
+    at Object.provideForRootGuard (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5815:11)
+    at Object.factory (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13664:32)
+    at eval (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13585:35)
+    at runInInjectorProfilerContext (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12742:5)
+    at R3Injector.hydrate (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13584:11)
+    at R3Injector.get (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13479:23)
+    at injectInjectorOnly (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12870:41)
+    at ɵɵinject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12876:59)
+    at inject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12885:10)
+    at _RouterModule (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5697:13) {
+  code: 4007
+}
+ERROR RuntimeError: NG04007: The Router was provided more than once. This can happen if 'forRoot' is used outside of the root injector. Lazy loaded modules should use RouterModule.forChild() instead.
+    at Object.provideForRootGuard (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5815:11)
+    at Object.factory (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13664:32)
+    at eval (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13585:35)
+    at runInInjectorProfilerContext (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12742:5)
+    at R3Injector.hydrate (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13584:11)
+    at R3Injector.get (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13479:23)
+    at injectInjectorOnly (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12870:41)
+    at ɵɵinject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12876:59)
+    at inject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12885:10)
+    at _RouterModule (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5697:13) {
+  code: 4007
+}
+12:42:10 PM [vite] Internal server error: NG04007: The Router was provided more than once. This can happen if 'forRoot' is used outside of the root injector. Lazy loaded modules should use RouterModule.forChild() instead.
+      at Object.provideForRootGuard (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5815:11)
+      at Object.factory (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13664:32)
+      at eval (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13585:35)
+      at runInInjectorProfilerContext (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12742:5)
+      at R3Injector.hydrate (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13584:11)
+      at R3Injector.get (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13479:23)
+      at injectInjectorOnly (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12870:41)
+      at ɵɵinject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12876:59)
+      at inject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12885:10)
+      at _RouterModule (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5697:13)
+12:42:10 PM [vite] Internal server error: NG04007: The Router was provided more than once. This can happen if 'forRoot' is used outside of the root injector. Lazy loaded modules should use RouterModule.forChild() instead.
+      at Object.provideForRootGuard (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5815:11)
+      at Object.factory (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13664:32)
+      at eval (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13585:35)
+      at runInInjectorProfilerContext (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12742:5)
+      at R3Injector.hydrate (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13584:11)
+      at R3Injector.get (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13479:23)
+      at injectInjectorOnly (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12870:41)
+      at ɵɵinject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12876:59)
+      at inject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12885:10)
+      at _RouterModule (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5697:13)
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  28.95 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-XLCKXPD7.mjs  | -           |  29.39 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.549 seconds]
+
+Page reload sent to client(s).
+ERROR RuntimeError: NG04007: The Router was provided more than once. This can happen if 'forRoot' is used outside of the root injector. Lazy loaded modules should use RouterModule.forChild() instead.
+    at Object.provideForRootGuard (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5815:11)
+    at Object.factory (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13664:32)
+    at eval (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13585:35)
+    at runInInjectorProfilerContext (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12742:5)
+    at R3Injector.hydrate (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13584:11)
+    at R3Injector.get (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13479:23)
+    at injectInjectorOnly (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12870:41)
+    at ɵɵinject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12876:59)
+    at inject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12885:10)
+    at _RouterModule (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5697:13) {
+  code: 4007
+}
+12:42:11 PM [vite] Internal server error: NG04007: The Router was provided more than once. This can happen if 'forRoot' is used outside of the root injector. Lazy loaded modules should use RouterModule.forChild() instead.
+      at Object.provideForRootGuard (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5815:11)
+      at Object.factory (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13664:32)
+      at eval (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13585:35)
+      at runInInjectorProfilerContext (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12742:5)
+      at R3Injector.hydrate (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13584:11)
+      at R3Injector.get (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13479:23)
+      at injectInjectorOnly (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12870:41)
+      at ɵɵinject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12876:59)
+      at inject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12885:10)
+      at _RouterModule (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5697:13)
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  28.95 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-YUE4GLYD.mjs  | -           |  29.39 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.214 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  28.95 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-ZTO4ZKTY.mjs  | -           |  29.39 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.192 seconds]
+
+Page reload sent to client(s).
+ERROR RuntimeError: NG04007: The Router was provided more than once. This can happen if 'forRoot' is used outside of the root injector. Lazy loaded modules should use RouterModule.forChild() instead.
+    at Object.provideForRootGuard (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5815:11)
+    at Object.factory (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13664:32)
+    at eval (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13585:35)
+    at runInInjectorProfilerContext (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12742:5)
+    at R3Injector.hydrate (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13584:11)
+    at R3Injector.get (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13479:23)
+    at injectInjectorOnly (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12870:41)
+    at ɵɵinject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12876:59)
+    at inject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12885:10)
+    at _RouterModule (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5697:13) {
+  code: 4007
+}
+12:42:14 PM [vite] Internal server error: NG04007: The Router was provided more than once. This can happen if 'forRoot' is used outside of the root injector. Lazy loaded modules should use RouterModule.forChild() instead.
+      at Object.provideForRootGuard (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5815:11)
+      at Object.factory (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13664:32)
+      at eval (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13585:35)
+      at runInInjectorProfilerContext (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12742:5)
+      at R3Injector.hydrate (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13584:11)
+      at R3Injector.get (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13479:23)
+      at injectInjectorOnly (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12870:41)
+      at ɵɵinject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12876:59)
+      at inject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12885:10)
+      at _RouterModule (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5697:13)
+ERROR RuntimeError: NG04007: The Router was provided more than once. This can happen if 'forRoot' is used outside of the root injector. Lazy loaded modules should use RouterModule.forChild() instead.
+    at Object.provideForRootGuard (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5815:11)
+    at Object.factory (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13664:32)
+    at eval (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13585:35)
+    at runInInjectorProfilerContext (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12742:5)
+    at R3Injector.hydrate (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13584:11)
+    at R3Injector.get (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13479:23)
+    at injectInjectorOnly (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12870:41)
+    at ɵɵinject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12876:59)
+    at inject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12885:10)
+    at _RouterModule (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5697:13) {
+  code: 4007
+}
+12:42:15 PM [vite] Internal server error: NG04007: The Router was provided more than once. This can happen if 'forRoot' is used outside of the root injector. Lazy loaded modules should use RouterModule.forChild() instead.
+      at Object.provideForRootGuard (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5815:11)
+      at Object.factory (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13664:32)
+      at eval (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13585:35)
+      at runInInjectorProfilerContext (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12742:5)
+      at R3Injector.hydrate (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13584:11)
+      at R3Injector.get (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:13479:23)
+      at injectInjectorOnly (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12870:41)
+      at ɵɵinject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12876:59)
+      at inject (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:12885:10)
+      at _RouterModule (/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-LFT3NR4N.js:5697:13)
