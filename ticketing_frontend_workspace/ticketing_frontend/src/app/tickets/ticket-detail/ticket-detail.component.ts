@@ -1,24 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { TicketsService } from '../tickets.service';
+import { TicketsService, Ticket, TicketUpdate } from '../tickets.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
-export interface Ticket {
-  id: number;
-  title: string;
-  description?: string | null;
-  status: 'open' | 'in_progress' | 'closed';
-  created_at: string;
-  updated_at: string;
-  owner_id: number;
-}
-
-export interface TicketUpdate {
-  title?: string | null;
-  description?: string | null;
-  status?: 'open' | 'in_progress' | 'closed' | null;
-}
 
 @Component({
   selector: 'app-ticket-detail',
@@ -57,11 +41,11 @@ export class TicketDetailComponent implements OnInit {
       return;
     }
     this.ticketsService.getTicket(ticketId).subscribe({
-      next: (t) => {
+      next: (t: Ticket) => {
         this.ticket = t;
         this.loading = false;
       },
-      error: (err) => {
+      error: (err: any) => {
         this.error = err.message || 'Error loading ticket';
         this.loading = false;
       }
@@ -95,16 +79,17 @@ export class TicketDetailComponent implements OnInit {
         this.ticket = updated;
         this.closeModal();
       },
-      error: err => (this.modalError = err.message || 'Error updating ticket')
+      error: (err: any) => (this.modalError = err.message || 'Error updating ticket')
     });
   }
 
   deleteTicket(): void {
     if (!this.ticket) return;
-    if (!window.confirm(`Are you sure you want to delete ticket "${this.ticket.title}"?`)) return;
+    // SSR-safe: check typeof window
+    if (typeof window !== 'undefined' && !window.confirm(`Are you sure you want to delete ticket "${this.ticket.title}"?`)) return;
     this.ticketsService.deleteTicket(this.ticket.id).subscribe({
       next: () => this.router.navigate(['/tickets']),
-      error: (err) => this.error = err.message || 'Error deleting ticket'
+      error: (err: any) => this.error = err.message || 'Error deleting ticket'
     });
   }
 
@@ -120,7 +105,7 @@ export class TicketDetailComponent implements OnInit {
     if (!this.ticket || this.ticket.status === status) return;
     this.ticketsService.patchTicketStatus(this.ticket.id, status).subscribe({
       next: (updated: Ticket) => this.ticket = updated,
-      error: (err) => this.error = err.message || 'Error updating status'
+      error: (err: any) => this.error = err.message || 'Error updating status'
     });
   }
 }

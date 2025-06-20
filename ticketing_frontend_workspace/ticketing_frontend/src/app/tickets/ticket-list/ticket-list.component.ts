@@ -1,28 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TicketsService } from '../tickets.service';
+import { TicketsService, Ticket, TicketCreate, TicketUpdate } from '../tickets.service';
 import { FormsModule } from '@angular/forms';
-
-export interface Ticket {
-  id: number;
-  title: string;
-  description?: string | null;
-  status: 'open' | 'in_progress' | 'closed';
-  created_at: string;
-  updated_at: string;
-  owner_id: number;
-}
-
-export interface TicketCreate {
-  title: string;
-  description?: string | null;
-}
-
-export interface TicketUpdate {
-  title?: string | null;
-  description?: string | null;
-  status?: 'open' | 'in_progress' | 'closed' | null;
-}
 
 @Component({
   selector: 'app-ticket-list',
@@ -53,11 +32,11 @@ export class TicketListComponent implements OnInit {
     this.loading = true;
     this.error = null;
     this.ticketsService.getTickets().subscribe({
-      next: (tickets) => {
+      next: (tickets: Ticket[]) => {
         this.tickets = tickets;
         this.loading = false;
       },
-      error: (err) => {
+      error: (err: any) => {
         this.error = err.message || 'Error loading tickets';
         this.loading = false;
       },
@@ -108,7 +87,7 @@ export class TicketListComponent implements OnInit {
           this.closeModal();
           this.loadTickets();
         },
-        error: err => (this.modalError = err.message || 'Error updating ticket')
+        error: (err: any) => (this.modalError = err.message || 'Error updating ticket')
       });
     } else {
       // Create ticket
@@ -120,17 +99,17 @@ export class TicketListComponent implements OnInit {
           this.closeModal();
           this.loadTickets();
         },
-        error: err => (this.modalError = err.message || 'Error creating ticket')
+        error: (err: any) => (this.modalError = err.message || 'Error creating ticket')
       });
     }
   }
 
   deleteTicket(ticket: Ticket): void {
-    // Using window.confirm avoids "no-undef"
-    if (!window.confirm(`Are you sure you want to delete the ticket "${ticket.title}"?`)) return;
+    // SSR-safe check for window
+    if (typeof window !== 'undefined' && !window.confirm(`Are you sure you want to delete the ticket "${ticket.title}"?`)) return;
     this.ticketsService.deleteTicket(ticket.id).subscribe({
       next: () => this.loadTickets(),
-      error: err => (this.error = err.message || 'Error deleting ticket')
+      error: (err: any) => (this.error = err.message || 'Error deleting ticket')
     });
   }
 
@@ -141,11 +120,11 @@ export class TicketListComponent implements OnInit {
     this.changeTicketStatus(ticket, status);
   }
 
-  changeTicketStatus(ticket: Ticket, status: 'open'|'in_progress'|'closed'): void {
+  changeTicketStatus(ticket: Ticket, status: 'open' | 'in_progress' | 'closed'): void {
     if (ticket.status === status) return;
     this.ticketsService.patchTicketStatus(ticket.id, status).subscribe({
       next: () => this.loadTickets(),
-      error: err => (this.error = err.message || 'Error updating status')
+      error: (err: any) => (this.error = err.message || 'Error updating status')
     });
   }
 }
