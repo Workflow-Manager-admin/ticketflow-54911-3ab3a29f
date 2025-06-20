@@ -31,7 +31,8 @@ export interface TicketUpdate {
 export class TicketsService {
   private apiBase = '/api'; // Change if you have backend proxy, otherwise set full hostname
 
-  constructor() {}
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  constructor(private http: HttpClient) {}
 
   // PUBLIC_INTERFACE
   /** List all tickets */

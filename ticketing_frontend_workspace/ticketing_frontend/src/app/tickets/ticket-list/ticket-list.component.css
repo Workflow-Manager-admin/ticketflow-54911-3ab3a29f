@@ -21,7 +21,21 @@
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 2px 6px rgba(30,50,80,0.04);
+  min-width: 0;
+  width: 100%;
 }
+
+@media (max-width: 750px) {
+  ul {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .ticket-list-item {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
 
 .ticket-header {
   display: flex;

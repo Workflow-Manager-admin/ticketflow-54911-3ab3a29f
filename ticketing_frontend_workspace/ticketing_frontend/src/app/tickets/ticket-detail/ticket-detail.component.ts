@@ -19,4 +19,12 @@ export class TicketDetailComponent {
   showModal = false;
   modalError: string | null = null;
   formData: Partial<TicketUpdate> = {};
+
+  // Stubs for template event bindings
+  openEditModal(): void {}
+  deleteTicket(): void {}
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  onStatusSelect(event: Event): void {}
+  submitModal(): void {}
+  closeModal(): void {}
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Ticket, TicketCreate, TicketUpdate } from '../tickets.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { TicketsService } from '../tickets.service';
 
 @Component({
   selector: 'app-ticket-list',
@@ -21,7 +22,11 @@ export class TicketListComponent {
   modalError: string | null = null;
   formData: Partial<TicketCreate & TicketUpdate> = {};
   editingTicketId: number | null = null;
-}
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  constructor(private ticketsService: TicketsService) {
+    this.loadTickets();
+  }
 
   loadTickets(): void {
     this.loading = true;

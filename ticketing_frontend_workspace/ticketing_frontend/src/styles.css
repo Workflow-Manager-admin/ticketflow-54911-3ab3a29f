@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+/* Theme color variables based on the task's specification */
+:root {
+  --primary: #1976d2;
+  --accent: #f44336;
+  --secondary: #ffffff;
+
+  --navbar-height: 56px;
+  --drawer-width: 250px;
+  --drawer-bg: #ffffff;
+  --drawer-shadow: 0 2px 10px rgba(25, 118, 210, 0.04);
+  --surface: #f8fafc;
+
+  --text-main: #17223a;
+}
+
+/* Reset, font, and body background for a clean, modern UI */
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--surface);
+  color: var(--text-main);
+  font-family: 'Inter', 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+/* Allow router-outlet/main to take 100% height for layouts */
+body, #root, app-root {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+
+/* Smooth transitions and basic interactive states */
+a, button, select, input {
+  transition: all 0.13s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hide scroll on drawer if not needed */
+::-webkit-scrollbar-thumb {
+  background: #e3e9f2;
+  border-radius: 6px;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Responsive helpers for app layout */
+@media (max-width: 750px) {
+  .sidebar-drawer {
+    width: 74vw !important;
+    min-width: 0 !important;
+    max-width: 88vw !important;
+    left: -100vw;
+  }
+}
+
+/* Utility classes for spacing/layout */
+.flex { display: flex; align-items: center; }
+.clickable { cursor: pointer; }
+.mr-1 { margin-right: 0.8em; }
+.ml-1 { margin-left: 0.8em; }
+.mt-1 { margin-top: 0.8em; }
+.mb-1 { margin-bottom: 0.8em; }
+.text-primary { color: var(--primary); }
+.text-accent { color: var(--accent); }
+.bg-primary { background: var(--primary); }
+.bg-secondary { background: var(--secondary); }
+.shadow {
+  box-shadow: 0 2px 9px rgba(30,50,80,0.07);
+}
+
+/* Hide overlay drawer on desktop when not active */
+.overlay-backdrop {
+  background: rgba(0,0,0,0.12);
+  position: fixed;
+  z-index: 1130;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: none;
+}
+.overlay-backdrop.active {
+  display: block;
+}
+
+/* Global button for navbar, drawer toggler, etc. */
+.btn {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.44em 1.05em;
+  font-size: 1em;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  background: #1255a2;
+}
+

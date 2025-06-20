@@ -14,4 +14,14 @@ export class AdminDashboardComponent {
   tickets: Ticket[] = [];
   loading = false;
   error: string | null = null;
+
+  // Provide stubs for ticket admin actions for now
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  onStatusSelect(event: Event, ticket: Ticket): void {
+    // Placeholder for method referenced in template
+  }
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  deleteTicket(ticket: Ticket): void {
+    // Placeholder for method referenced in template
+  }
 }

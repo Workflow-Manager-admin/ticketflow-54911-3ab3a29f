@@ -9,7 +9,17 @@
   border-radius: 10px;
   background: #fff;
   box-shadow: 0 2px 9px rgba(30,50,80,0.07);
+  min-width: 0;
+  width: 100%;
 }
+
+@media (max-width: 750px) {
+  .ticket-detail-card {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
 .ticket-desc {
   margin: 0.5em 0 0.8em 0;
   color: #222;
