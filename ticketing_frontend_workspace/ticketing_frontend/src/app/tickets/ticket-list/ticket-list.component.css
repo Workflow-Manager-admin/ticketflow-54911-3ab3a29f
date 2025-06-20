@@ -2,3 +2,125 @@
   padding: 1rem;
   color: #1976d2;
 }
+
+.create-btn {
+  margin-bottom: 1rem;
+  padding: 0.5em 1.2em;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.ticket-list-item {
+  border: 1px solid #e0e0e0;
+  margin-bottom: 1em;
+  padding: 0.75em 1em;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(30,50,80,0.04);
+}
+
+.ticket-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ticket-title {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #222;
+}
+.ticket-meta {
+  font-size: 0.85em;
+  color: #666;
+  display: flex;
+  gap: 1.2em;
+  margin: 0.4em 0 0.2em;
+}
+.ticket-desc {
+  margin: 0.3em 0 0.6em 0;
+  color: #222;
+}
+.ticket-actions button {
+  margin-right: 0.5em;
+  padding: 0.3em 0.8em;
+  border: none;
+  background: #eee;
+  color: #1976d2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ticket-actions button:hover {
+  background: #e3eefc;
+}
+.ticket-actions select {
+  margin-left: 0.3em;
+  padding: 0.2em 0.5em;
+}
+
+.ticket-status-pill {
+  display: inline-block;
+  min-width: 70px;
+  padding: 0.15em 0.8em;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  font-size: 0.95em;
+}
+.ticket-status-pill.open {
+  background: #1976d2;
+}
+.ticket-status-pill.in_progress {
+  background: #fd9023;
+}
+.ticket-status-pill.closed {
+  background: #777;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(40,48,66,0.18);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  background: #fff;
+  padding: 2em 2.2em 1.2em 2.2em;
+  border-radius: 12px;
+  box-shadow: 0 2px 25px rgba(0,0,0,0.15);
+  min-width: 320px;
+}
+.modal label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.3em;
+}
+.modal input, .modal textarea, .modal select {
+  width: 100%;
+  margin-bottom: 0.7em;
+  border-radius: 6px;
+  border: 1px solid #c0c0c0;
+  padding: 0.5em 0.8em;
+}
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7em;
+}
+.modal-actions button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.modal-actions button:last-child {
+  background: #aaa;
+}

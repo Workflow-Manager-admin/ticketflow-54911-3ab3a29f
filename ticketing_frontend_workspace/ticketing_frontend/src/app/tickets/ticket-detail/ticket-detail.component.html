@@ -1,5 +1,56 @@
 <h2>Ticket Details</h2>
-<!-- Ticket details placeholder -->
-<div class="ticket-detail-placeholder">
-  Ticket detail will be displayed here.
+<div *ngIf="loading" class="ticket-detail-placeholder">Loading ticket...</div>
+<div *ngIf="error" class="ticket-detail-placeholder" style="color: red;">{{ error }}</div>
+
+<div *ngIf="ticket && !loading && !error" class="ticket-detail-card">
+  <h3>{{ ticket.title }}</h3>
+  <span class="ticket-status-pill" [ngClass]="ticket.status">{{ ticket.status | titlecase }}</span>
+  <div class="ticket-meta">
+    <span>ID: {{ ticket.id }}</span>
+    <span>Created: {{ ticket.created_at | date:'short' }}</span>
+    <span>Updated: {{ ticket.updated_at | date:'short' }}</span>
+    <span>Owner: {{ ticket.owner_id }}</span>
+  </div>
+  <p *ngIf="ticket.description" class="ticket-desc">{{ ticket.description }}</p>
+
+  <div class="ticket-actions">
+    <button (click)="openEditModal()">Edit</button>
+    <button (click)="deleteTicket()">Delete</button>
+    <span>Status:</span>
+    <select [value]="ticket.status" (change)="onStatusSelect($event)">
+      <option value="open">Open</option>
+      <option value="in_progress">In Progress</option>
+      <option value="closed">Closed</option>
+    </select>
+  </div>
+</div>
+
+<!-- Modal for Edit -->
+<div class="modal-backdrop" *ngIf="showModal">
+  <div class="modal">
+    <h3>Edit Ticket</h3>
+    <form (ngSubmit)="submitModal()" #ticketForm="ngForm">
+      <div>
+        <label>Title</label>
+        <input name="title" [(ngModel)]="formData.title" required />
+      </div>
+      <div>
+        <label>Description</label>
+        <textarea name="description" [(ngModel)]="formData.description"></textarea>
+      </div>
+      <div>
+        <label>Status</label>
+        <select [(ngModel)]="formData.status" name="status">
+          <option value="open">Open</option>
+          <option value="in_progress">In Progress</option>
+          <option value="closed">Closed</option>
+        </select>
+      </div>
+      <div style="color: red;" *ngIf="modalError">{{ modalError }}</div>
+      <div class="modal-actions">
+        <button type="submit">Save</button>
+        <button type="button" (click)="closeModal()">Cancel</button>
+      </div>
+    </form>
+  </div>
 </div>

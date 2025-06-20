@@ -2,3 +2,101 @@
   padding: 1rem;
   color: #1976d2;
 }
+.ticket-detail-card {
+  border: 1px solid #e0e0e0;
+  margin-top: 0.6em;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 9px rgba(30,50,80,0.07);
+}
+.ticket-desc {
+  margin: 0.5em 0 0.8em 0;
+  color: #222;
+}
+.ticket-meta {
+  font-size: 0.92em;
+  color: #666;
+  display: flex;
+  gap: 1.5em;
+  margin: 0.5em 0 0.5em;
+}
+.ticket-status-pill {
+  display: inline-block;
+  min-width: 70px;
+  padding: 0.12em 0.7em;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  font-size: 0.96em;
+  margin-bottom: 0.3em;
+}
+.ticket-status-pill.open {
+  background: #1976d2;
+}
+.ticket-status-pill.in_progress {
+  background: #fd9023;
+}
+.ticket-status-pill.closed {
+  background: #777;
+}
+.ticket-actions button {
+  margin-right: 0.7em;
+  padding: 0.3em 0.9em;
+  border: none;
+  background: #eee;
+  color: #1976d2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ticket-actions button:hover {
+  background: #e7edfd;
+}
+.ticket-actions select {
+  margin-left: 0.6em;
+  padding: 0.2em 0.6em;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(40,48,66,0.18);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  background: #fff;
+  padding: 2em 2.2em 1.2em 2.2em;
+  border-radius: 12px;
+  box-shadow: 0 2px 25px rgba(0,0,0,0.15);
+  min-width: 320px;
+}
+.modal label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.3em;
+}
+.modal input, .modal textarea, .modal select {
+  width: 100%;
+  margin-bottom: 0.7em;
+  border-radius: 6px;
+  border: 1px solid #c0c0c0;
+  padding: 0.5em 0.8em;
+}
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7em;
+}
+.modal-actions button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.modal-actions button:last-child {
+  background: #aaa;
+}
