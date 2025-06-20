@@ -1,0 +1,30 @@
+
+> angular@0.0.0 start
+> ng serve --host 0.0.0.0  --no-hmr --disable-host-check --port 3000
+
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  22.59 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 112.88 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [2.108 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/

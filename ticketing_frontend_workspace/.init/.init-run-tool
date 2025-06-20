@@ -1,0 +1,4 @@
+{
+    "command": "npm start -- --port <port>",
+    "working_directory": "/home/kavia/workspace/code-generation/ticketflow-54911-3ab3a29f/ticketing_frontend_workspace/ticketing_frontend"
+}
